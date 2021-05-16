@@ -1,8 +1,8 @@
 # Secure Donation
 
-## Description
+##Goodwill
+Goodwill serves as an Ethereum based dApp which can be used for bringing up transparency in the way , we believe that the money donated by a donar is his hard earned ,which the individual donates with a hope that it would be used for the betterment and the welfare of the society, but the problems like black money holders showing there transactions in white,using money for smuggling and other illegal purposes hampers the trust of these individuals and creates a big doubt in there mind, this can be stopped to a large extent using our proposed system.
 
-We have tried to come up with an Ethereum based dApp which can be used for bringing up transparency in the way , the money donated by the people is being used by the respective organanizations.The problems like black money holders showing there transactions in white,using money for smuggling and other illegal purposes can be stopped to a large extent using this dApp.
 
 ## Inspiration
 Donations for public welfare, NGOs, orphanages, organ transplantation are the means by which children, old age people, handicapped and the less privileged ones are able to receive facilities which they won’t be able to get otherwise.However, this system must work very honestly and with no corruption to have actual benefits towards the betterment of society. Owners and managers of these organizations may turn out to be corrupt and use the working of anonymous donation as the main means for corruption on large scale.
@@ -34,7 +34,7 @@ rendering of the ReactJS Components.
  In our project we have two contracts. One for the main consensus algorithm based on which every transaction is approved. Second to store the address of all the deployed contracts on our network. The user interacts with factory to get the details of the organization it wants to interact with and then it can interact with the organization directly.
 In our project we deploy our smart contract on Infura using the API ID provided by the Infura API as the address of our smart contract. 
 
-##Tech Stack
+## Tech Stack
     • Ethereum
     • Next.js, Reactjs
     • Solidity
@@ -43,9 +43,13 @@ In our project we deploy our smart contract on Infura using the API ID provided 
 
 ## Challenges we ran into
 1.Ideating the whole project, brainstorming over the features we have to come up with was a very rigorous process itself.
+
 2. We introduced ourself to blockchain few months back so working on smartcontracts with limited resources was challenging.
+
 3.We were not very much familiar with nextjs , so working with it was a bit gruelling.
-4.Setting up ethereum network and connecting with metamask using infura as the platform took efforts in initial stage nevertheless stackoverflow helped.
+
+4.Setting up ethereum network and connecting with metamask using infura as the platform took efforts in initial stage
+ nevertheless stackoverflow helped.
 
 
 
@@ -57,12 +61,6 @@ In our project we deploy our smart contract on Infura using the API ID provided 
 
 
 
-## What we learned
-Every hackathon is a very good learning experience, by participating here also we got to learn and explore a lot of new stuff.
-1. writing smart contracts, creating our dapp.
-2. next.js was new for us, so we got some handson at next.js as well
-3. most importantly working under pressure and maintaining coordination with the collaborators so that we are at a sync with them.
-
 ## What's next for Goodwill
 
 In this system we see that the adding of block in blockchain takes around 8-11 seconds in the test network which is slow as per efficiency of the system is concerned as per next this system can
@@ -70,6 +68,8 @@ be made efficient when we parallelize the transactions that are queued for getti
 However, till now there is no particular way to speed up the transactions except the experiment of increasing resources to process the request faster. In future works, we will try to make
 this system efficient as per the speed of transactions is concerned. Our proposed system serves a very important purpose if implemented and accepted by the government.
 Hence, if the system is utilized to its maximum potential, it will help bring down corruption to a large scale.
+
+## Screenshots of our working project
 ![Screenshot (131)](https://user-images.githubusercontent.com/57298737/118416511-afdd5100-b6cd-11eb-873b-f5b4df32ffc8.png)
 ![Screenshot (134)](https://user-images.githubusercontent.com/57298737/118416513-b7045f00-b6cd-11eb-8610-d9dbf03815f0.png)
 ![Screenshot (136)](https://user-images.githubusercontent.com/57298737/118416517-ba97e600-b6cd-11eb-8e38-459c9bb924e5.png)
