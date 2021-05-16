@@ -1,4 +1,4 @@
-#Goodwill
+## Goodwill
 Goodwill serves as an Ethereum based dApp which can be used for bringing up transparency in the way , we believe that the money donated by a donar is his hard earned ,which the individual donates with a hope that it would be used for the betterment and the welfare of the society, but the problems like black money holders showing there transactions in white,using money for smuggling and other illegal purposes hampers the trust of these individuals and creates a big doubt in there mind, this can be stopped to a large extent using our proposed system.
 
 
