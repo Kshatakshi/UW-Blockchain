@@ -31,7 +31,7 @@ class Header extends React.Component {
             <h1  style={{ color:'#eeeeef', fontFamily:"Vollkorn", marginTop:'16px', fontSize: '43px',width:'170px'}} >Goodwill</h1>
           </a>
           
-          <p className="tag" style={{ left:"50%", transform: "translate(-50%,0)", position:"absolute", marginTop:'34px', color:'#eeeeef', fontFamily: 'Vollkorn', fontSize: '28px',fontStyle:'italic'}}>Secure donations,Secure good deeds!</p>
+          <p className="tag" style={{ left:"50%", transform: "translate(-50%,0)", position:"absolute", marginTop:'34px', color:'#eeeeef', fontFamily: 'Vollkorn', fontSize: '28px',fontStyle:'italic'}}>Secure donations, Secure good deeds!</p>
           <style jsx>{`
         @media (max-width: 600px) {
           .tag {

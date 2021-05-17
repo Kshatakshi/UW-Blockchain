@@ -4,7 +4,8 @@ import Layout from "../components/Layout";
 import factory from "../ethereum/factory";
 import { Link } from "../routes";
 import Organization from "../ethereum/organization";
-
+import Float from "../components/Image/svg.svg";
+import Float2 from '../components/Image/blockchain.png';
 const colors=['#AE8A8C',
   '#DBBC8E',
   '#A9C8C0'];
@@ -35,15 +36,9 @@ class Index extends React.Component {
 
   renderOrganizations() {
     
-    
-    
-       
     const items = this.props.organizations.map((organization, index) => {
       
       return {
-   
-        
-       
         header: (
           
           <Card  >
@@ -53,26 +48,26 @@ class Index extends React.Component {
         <Card.Content  style={{backgroundColor:colors[Math.floor(Math.random() * colors.length)], fontWeight:'bold', height:"8vh", color:"white"}}>
         <Card.Header style={{color:"whitesmoke"}} >{organization[0]}</Card.Header>
           {/* <h1 >{organization[0]}</h1> */}
-    </Card.Content>
+        </Card.Content>
           </Card>
         ),
         description: (
              <div >
               <card>
 
-<Card.Description style={{ color:"grey"}}>
-{organization[1]}
-<br />
-</Card.Description>
-<Card.Content extra>
+        <Card.Description style={{ color:"grey"}}>
+          {organization[1]}
+          <br />
+        </Card.Description>
+        <Card.Content extra>
 
-<Link
+            <Link
               route={`/organizations/${this.props.organizationAddr[index]}`}
             >
               
               <a >View Organization</a>
             </Link>
-            </Card.Content>
+        </Card.Content>
 
      
       </card>
@@ -84,7 +79,7 @@ class Index extends React.Component {
           };
      
     });
-return <Card.Group  items={items} /> 
+return <Card.Group items={items} /> 
          
   }
   render() {
@@ -104,38 +99,24 @@ return <Card.Group  items={items} />
           </a>
          
         </Link>
-        {/* <div  nbsp nbsp  style={{color:"white"}}> hey whats app</div> */}
-       <div className="mob" align="left" >
-       <h2 style={{marginLeft: "10px",fontStyle:'italic' }} >Open Organizations</h2>
-        {/* <div className="ui grid"> */}
-         {/* <Grid.Row  width={30}> */}
-            {this.renderOrganizations()}
-            
-          {/* </Grid.Row> */}
-          {/* </div> */}
-       
+        <div style={{display: 'flex', flexDirection: 'row', justifyContent:'space-between', position: 'relative'}}>
+        <img className="bg"  src={Float} alt='logo'/>
+        <img className="bg2" src={Float2} alt='logo'/>
+        <img className="bg3" src={Float2} alt='logo'/>
         </div>
-        <style jsx>{`
-
-        .main{
-          boxShadow: 5px 10px #888888,
-          width: "350px",
-          border: "2px grey"
-        }
-        
-        @media (max-width: 600px) {
-          .mob {
-            width: "350px",
-            paddingBottom: "80px",
-  paddingLeft:"80px",
-  border: "2px grey",
-  margin: "0" ,
-  alignContent:"center"
-
-          }
-        }
-      `}</style>
+        <div className="mob" align="left" >
+          <div className="head" style={{position: 'absolute', zIndex: 10, marginTop: '-60vh'}}>
+            <h2 style={{marginLeft: "10px"}} >Open Organizations</h2>
+                  {this.renderOrganizations()}
+          </div>    
+        </div>
+       
       </Layout>
+      {/* <style jsx>{`
+      .mob{
+        padding: '50%';
+      }
+      `}</style> */}
       </div>
     );
   }

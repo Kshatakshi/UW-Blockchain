@@ -15,6 +15,7 @@ var Layout = props => {
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script"></link>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script"></link>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Vollkorn"></link>
+        <link rel="stylesheet" href="./static/style.css" type="text/css"></link>
       </Head>
       <Header />
       <Container>

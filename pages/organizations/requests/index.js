@@ -9,6 +9,8 @@ import web3 from "../../../ethereum/web3";
 import Layout from "../../../components/Layout";
 import Organization from "../../../ethereum/organization";
 import RenderRow from "../../../components/RenderRow";
+import Float from "../../../components/Image/svg.svg";
+import Float2 from '../../../components/Image/blockchain.png';
 
 class ViewRequests extends React.Component {
   state = {
@@ -79,42 +81,53 @@ class ViewRequests extends React.Component {
   render() {
     const { Header, Row, HeaderCell, Body } = Table;
     return (
+      <div style={{backgroundImage:`url("https://i.pinimg.com/564x/cc/a1/f1/cca1f16b945651b503ccc55b6536aeb5.jpg")`, height:"100vh"}}>
       <Layout>
         {/* <Dimmer active inverted>
           <Loader size="large">Processing Request ...</Loader>
         </Dimmer> */}
-        <Link route={`/organizations/${this.props.address}/requests/new`}>
-          <a>
-            <Button floated="right" style={{backgroundColor:'#55BCC9'}}>
-              Add Request
-            </Button>
-          </a>
-        </Link>
-        <Link route={`/organizations/${this.props.address}`}>
-          <a>
-            <Button icon labelPosition="left" floated="right" style={{backgroundColor:'#55BCC9'}}>
-              <Icon name="left arrow" />
-              Back
-            </Button>
-          </a>
-        </Link>
-        <h2>Requests</h2>
-        <Table>
-          <Header>
-            <Row>
-              <HeaderCell>ID</HeaderCell>
-              <HeaderCell>Description</HeaderCell>
-              <HeaderCell>Recipient</HeaderCell>
-              <HeaderCell>Amount</HeaderCell>
-              <HeaderCell>Approvals</HeaderCell>
-              <HeaderCell>Approve</HeaderCell>
-              <HeaderCell>Finalize</HeaderCell>
-            </Row>
-          </Header>
-          <Body>{this.renderRows()}</Body>
-        </Table>
-        <h4>Found {this.state.requests.length} requests</h4>
+        <div style={{display: 'flex', flexDirection: 'row', justifyContent:'space-between', position: 'relative'}}>
+        <img className="bg" style={{marginLeft: '-7%'}} src={Float} alt='logo'/>
+        <img className="bg2" src={Float2} alt='logo'/>
+        <img className="bg3" src={Float2} alt='logo'/>
+        </div>
+        <div style={{display: 'flex', justifyContent:'center'}}>
+        <div style={{position: 'absolute', marginTop: '-60vh', width:'80%'}}>
+            <Link route={`/organizations/${this.props.address}/requests/new`}>
+              <a>
+                <Button floated="right" style={{backgroundColor:'#55BCC9', color: 'white'}}>
+                  Add Request
+                </Button>
+              </a>
+            </Link>
+            <Link route={`/organizations/${this.props.address}`}>
+              <a>
+                <Button icon labelPosition="left" floated="right" style={{backgroundColor:'#55BCC9', color:'white'}}>
+                  <Icon name="left arrow" />
+                  Back
+                </Button>
+              </a>
+            </Link>
+            <h2>Requests</h2>
+            <Table>
+              <Header>
+                <Row>
+                  <HeaderCell>ID</HeaderCell>
+                  <HeaderCell>Description</HeaderCell>
+                  <HeaderCell>Recipient</HeaderCell>
+                  <HeaderCell>Amount</HeaderCell>
+                  <HeaderCell>Approvals</HeaderCell>
+                  <HeaderCell>Approve</HeaderCell>
+                  <HeaderCell>Finalize</HeaderCell>
+                </Row>
+              </Header>
+              <Body>{this.renderRows()}</Body>
+            </Table>
+            <h4>Found {this.state.requests.length} requests</h4>
+        </div>
+        </div>
       </Layout>
+      </div>
     );
   }
 }
